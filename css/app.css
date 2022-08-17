@@ -179,6 +179,7 @@
     border-radius: 5px;
     margin: 10px;
     height: 185px;
+    list-style-type:none;
 }
 
 #button0 {
