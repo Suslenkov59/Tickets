@@ -16,7 +16,7 @@ fetch("http://localhost:3001/tickets1") //убери 1 чтобы сервер �
 })*/
 
 async function getResponse() {
-    let response = await fetch("http://localhost:3001/tickets")
+    let response = await fetch('http://localhost:3001/tickets')
     let content = await response.json()
     content = content.splice(0, 5)
 
@@ -24,7 +24,7 @@ async function getResponse() {
 
     let key;
     for (key in content) {
-        list.innerHTML += '<div class="Ticket">${content[key].price}</div>'
+        list.innerHTML += '<div class="Ticket">${content[key].price}</div>' //надо настроить вывод именно цены
     }
 }
 
