@@ -29,7 +29,7 @@ function mySort() {
     }
 }
 
-function insertAfter (elem, refElem) {
+function insertAfter(elem, refElem) {
     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
 
