@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>test-tasks</title>
+</head>
+
+<body id="body">
+
+<header id="Header"><img src="/Logo.png" alt="Лого"></header>
+
+<div id="Nav">
+    <div class="textCheckbox">  Количество пересадок </div>
+    <div class="checkbox">
+        <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1">
+        <label for="color-1">Все</label>
+    </div>
+    <div class="checkbox">
+        <input class="custom-checkbox" type="checkbox" id="color-2" name="color-2">
+        <label for="color-2">Без пересадок</label>
+    </div>
+    <div class="checkbox">
+        <input class="custom-checkbox" type="checkbox" id="color-3" name="color-3">
+        <label for="color-3">1 пересадка</label>
+    </div>
+    <div class="checkbox">
+        <input class="custom-checkbox" type="checkbox" id="color-4" name="color-4">
+        <label for="color-4">2 пересадки</label>
+    </div>
+    <div class="checkbox">
+        <input class="custom-checkbox" type="checkbox" id="color-5" name="color-5">
+        <label for="color-5">3 пересадки</label>
+    </div>
+</div>
+
+<button id="button1">Самый дешевый</button>
+<button id="button2">Самый быстрый</button>
+<button id="button3">Оптимальный</button>
+<button id="button0">Показать еще 5 билетов!</button>
+
+<div id="Tickets">
+    <div class="Ticket" data-sort="5">Ticket1</div>
+    <div class="Ticket" data-sort="9">Ticket2</div>
+    <div class="Ticket" data-sort="6">Ticket3</div>
+    <div class="Ticket" data-sort="8">Ticket4</div>
+    <div class="Ticket" data-sort="1">Ticket5</div>
+</div>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
