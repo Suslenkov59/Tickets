@@ -104,7 +104,7 @@
 }
 
 #button1:hover {
-    background-color: #2196F3
+    background-color: #2196F3;
 }
 
 #button1:active {
@@ -171,7 +171,6 @@
     grid-area: t;
 }
 
-
 .Ticket {
     grid-area: t;
     background: #FFFFFF;
@@ -180,7 +179,191 @@
     margin: 10px;
     height: 185px;
     list-style-type:none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "price space logo"
+    "routeAcheadCities routeAcheadTime routeAcheadStops"
+    "routeBackCities routeBackTime routeBackStops";
 }
+
+.price { grid-area: price; }
+.price {
+    padding: 15px;
+    margin-top: 10px;
+
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #2196F3;
+}
+
+.space { grid-area: space; }
+
+.logo { grid-area: logo; }
+.logo {
+    margin: 10px 0 0 auto;
+    padding: 15px;
+}
+
+.routeAcheadCities {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "cities"
+    "citiesTime";
+    grid-area: routeAcheadCities;
+}
+
+.cities { grid-area: cities; }
+.cities{
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0B0B9;
+}
+.citiesTime { grid-area: citiesTime; }
+.citiesTime{
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #4A4A4A;
+}
+
+.routeAcheadTime {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "vPuti"
+    "vPutiTimes";
+    grid-area: routeAcheadTime;
+}
+
+.vPuti { grid-area: vPuti; }
+.vPuti{
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0B0B9;
+}
+.vPutiTimes { grid-area: vPutiTimes; }
+.vPutiTimes {
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #4A4A4A;
+}
+
+.routeAcheadStops {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "stops1"
+    "stops2";
+    grid-area: routeAcheadStops;
+}
+
+.stops1 { grid-area: stops1; }
+.stops1 {
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0B0B9;
+}
+.stops2 { grid-area: stops2; }
+
+.routeBackCities {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "citiesBack"
+    "citiesTimeBack";
+    grid-area: routeBackCities;
+}
+.citiesBack { grid-area: citiesBack; }
+.citiesBack {
+    margin-left: 15px;
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0B0B9;
+}
+.citiesTimeBack { grid-area: citiesTimeBack; }
+.citiesTimeBack {
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #4A4A4A;
+}
+
+.routeBackTime {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "vPutiBack"
+    "vPutiTimesBack";
+    grid-area: routeBackTime;
+}
+.vPutiBack { grid-area: vPutiBack; }
+.vPutiTimesBack { grid-area: vPutiTimesBack; }
+.routeBackStops {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "stopsBack1"
+    "stopsBack2";
+    grid-area: routeBackStops;
+}
+.stopsBack1 { grid-area: stopsBack1; }
+.stopsBack1 {
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0B0B9;
+}
+.stopsBack2 { grid-area: stopsBack2; }
 
 #button0 {
     grid-area: b0;
