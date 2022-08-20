@@ -39,7 +39,6 @@
     position: absolute;
     z-index: -1;
     opacity: 0;
-
 }
 
 .custom-checkbox + label {
@@ -82,7 +81,9 @@
 
 .checkbox {
     margin-bottom: 1em;
-
+}
+.checkbox:hover {
+    background: #F1FCFF;
 }
 
 #button1 {
@@ -107,10 +108,10 @@
     background-color: #2196F3;
 }
 
-#button1:active {
+#button1:focus {
     background-color: #2196F3;
-    box-shadow: 1px 1px #666;
-    transform: translateY(4px);
+
+
 }
 
 #button2 {
@@ -133,10 +134,8 @@
     background-color: #2196F3
 }
 
-#button2:active {
+#button2:focus {
     background-color: #2196F3;
-    box-shadow: 1px 1px #666;
-    transform: translateY(4px);
 }
 
 #button3 {
@@ -161,10 +160,8 @@
     background-color: #2196F3
 }
 
-#button3:active {
+#button3:focus {
     background-color: #2196F3;
-    box-shadow: 1px 1px #666;
-    transform: translateY(4px);
 }
 
 #Tickets {
@@ -418,4 +415,5 @@
     box-shadow: 1px 1px #666;
     transform: translateY(4px);
 }
+
 

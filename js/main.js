@@ -15,7 +15,7 @@ for (let i = 0; i < a.length; i++) {
 */
 
 
-document.querySelector("#button1").onclick = mySort;
+/*document.querySelector("#button1").onclick = mySort; // оно живо но реплейс нод пока не робит
 
 function mySort() {
     let Tickets = document.querySelectorAll('#Tickets');
@@ -31,7 +31,7 @@ function mySort() {
 
 function insertAfter(elem, refElem) {
     return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
-}
+}*/
 
 /*
 const filterTickets = document.querySelectorAll('#Tickets');
@@ -40,3 +40,38 @@ document.querySelector('nav').addEventListener('click', (event)=> {
     let filterClass = event.target.dataset['data-sort'];
     console.log(filterClass);
 })*/
+
+/*
+filterSelection("${content[key].price}")
+function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("price");
+    if (c == "${content[key].price}") c = "";
+    for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+}
+
+function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+}
+
+function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+    }
+    element.className = arr1.join(" ");
+}
+*/
+

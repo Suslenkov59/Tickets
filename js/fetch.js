@@ -1,3 +1,4 @@
+
 async function getResponse() {
     let response = await fetch('http://localhost:3001/tickets')
     let content = await response.json() //тип файла
