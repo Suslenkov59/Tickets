@@ -357,6 +357,14 @@
     color: #A0B0B9;
 }
 .vPutiTimesBack { grid-area: vPutiTimesBack; }
+.vPutiTimesBack {
+    margin-left: 15px;
+    font-family: 'Open Sans', "Segoe UI Semibold";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #4A4A4A;
+}
 
 .routeBackStops {
     display: grid;

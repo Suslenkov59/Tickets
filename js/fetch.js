@@ -20,7 +20,7 @@ async function getResponse() {
         </div>
         <div class="routeAcheadTime">
          <div class="vPuti">В пути</div>
-            <div class="vPutiTimes"> ${content[key].segments[0].date}</div>
+            <div class="vPutiTimes"> ${content[key].segments[0].date[0]}</div>
         </div>
         <div class="routeAcheadStops">
             <div class="stops1">пересадки</div>
@@ -32,7 +32,7 @@ async function getResponse() {
         </div>
         <div class="routeBackTime">
             <div class="vPutiBack">В пути</div>
-            <div class="vPutiTimesBack"></div>
+            <div class="vPutiTimesBack"> ${content[key].segments[0].date[0]}</div>
         </div>
         <div class="routeBackStops">
             <div class="stopsBack1"> пересадки</div>
